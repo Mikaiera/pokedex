@@ -1,5 +1,5 @@
 const pokeContainer = document.getElementById('poke_Container')// hold the number of pokemon we want to display.
-const poke_Num = 151// hold the number of pokemon we want to display.
+const poke_Num = 151// holds the number of pokemon we want to display.
 
 
 let cardDetails = async () => {
@@ -7,7 +7,6 @@ let cardDetails = async () => {
     for (let i = 1; i <= poke_Num; i++) {
         await getPokemon(i)
     }
-    filterData()
 }
 
 //fetches the data thats needed from the array 

@@ -29,14 +29,27 @@ script {
     display: none;
 }
 
-/* Audio styling */
+
 audio {
-    position: absolute;
-    right: 20px;
-    top: 20px;
+    background-color: transparent;
+    margin-right: 20px;
+    outline: none;
 }
 
-/* Headings */
+audio::-webkit-media-controls-panel {
+    background-color: rgba(235, 52, 180, 0.795);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider {
+    color: whitesmoke; /* Change button and slider colors */
+}
+
+audio:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
 h1 {
     color: whitesmoke;
     font-style: italic;
@@ -189,13 +202,17 @@ h4, .pokeid {
     font-family: cursive;
 }
 
-/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center; 
     padding: 10px;
-    background-color: rgb(228, 67, 214);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    background-color: rgba(235, 52, 180, 0.795); 
+    border-bottom: 2px solid rgba(199, 34, 150, 0.726);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    width: 150px;
+    height: auto;
 }

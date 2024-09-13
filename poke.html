@@ -1,28 +1,35 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Meka's Pokedex and search for your favorite Pokémon. Listen to the Japanese Pokémon theme and have fun!">
     <title>Meka Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
-  
 </head>
 <body>
     <header>
-        <img src="/src/pokedex.png" alt=" pokedex banner">
-        <audio controls>
-        <source src="/src/pokemon.japanese.mp3" type="audio/ogg">
-        Your browser does not support the audio element.
-        </audio>   
+        <img src="/src/pokedex.png" alt="Pokedex Banner" aria-label="Pokedex Banner" loading="lazy">
+        <audio controls autoplay>
+            <source src="/src/pokemon.japanese.mp3" type="audio/ogg">
+            <source src="/src/pokemon.japanese.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </header>
 
     <section class="search-Box">  
-        <a href="search.html"><button class="enter-Search">Click here to search pokemon</button></a>         
+        <a href="search.html">
+            <button class="enter-Search" aria-label="Search for Pokémon">Click here to search Pokémon</button>
+        </a>         
     </section>
 
-<div id="poke_Container"></div>
+    <!-- Div to display Pokémon cards, filled dynamically by JavaScript -->
+    <div id="poke_Container" class="poke_Container"></div>
 
- <script src="/javascript/pokee.js"></script> 
+    <!-- Link to JavaScript file, defer for better loading performance -->
+    <script src="/javascript/pokee.js" defer></script> 
+
 </body>
 </html>

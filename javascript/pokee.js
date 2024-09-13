@@ -1,5 +1,5 @@
 const pokeContainer = document.getElementById('poke_Container')// hold the number of pokemon we want to display.
-const poke_Num = 151// holds the number of pokemon we want to display.
+const poke_Num = 1550// holds the number of pokemon we want to display.
 
 
 let cardDetails = async () => {

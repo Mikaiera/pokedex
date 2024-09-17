@@ -37,12 +37,12 @@ audio {
 }
 
 audio::-webkit-media-controls-panel {
-    background-color: rgba(235, 52, 180, 0.795);
+    background-color: rgba(202, 47, 155, 0.795);
 }
 
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-volume-slider {
-    color: whitesmoke; /* Change button and slider colors */
+    color: whitesmoke;
 }
 
 audio:hover {
@@ -69,7 +69,7 @@ h3 {
 .search-Box {
     display: inline-flex;
     justify-content: center;
-    margin: 20px 0; /* Added spacing */
+    margin: 20px 0; 
 }
 
 /* Input fields */

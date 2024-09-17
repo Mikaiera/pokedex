@@ -60,7 +60,7 @@ async function getPokemon (name= "pikachu") {
     `
     pokemon.innerHTML = pokemonInnerHTML;//javascript colleted data is now going to be displayed in html
 
-    poke_Container.appendChild(pokemon);//without this the pokemon cards wont be displayed within the main div
+    pokeContainer.appendChild(pokemon);//without this the pokemon cards wont be displayed within the main div
 }
   
 //this function displays everything
